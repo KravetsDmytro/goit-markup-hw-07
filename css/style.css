@@ -41,13 +41,19 @@ p {
 
 .container {
   padding-left: 16px;
-  padding-right: 16px;
+  padding-right: 16px;}
   /* width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px; */
-  
+
+/* видалення крапок */
+.list {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 /* logo */
 .logo {
@@ -60,6 +66,11 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 122px;
+}
+
+
+.blue {
+  color: var(--accent-color);
 }
 
 .button-hero {
@@ -92,6 +103,7 @@ p {
   padding: 0;
   height: 22px;
 }
+/* -----контейнер------*/
 
 
 
@@ -114,8 +126,11 @@ p {
     padding-right: 15px;
   }
 }
+/* -------------------- */
 
-/* ==приховати від 0 до 767== */
+
+
+/* ==приховати від 0 до 767== */ 
 @media screen and (max-width: 767px) {
   .header-nav,
   .contact {
@@ -414,7 +429,7 @@ p {
     margin-bottom: 48px;
 
 
-}}
+}}}
 
 
 /* ================================ */
