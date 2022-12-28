@@ -20,27 +20,28 @@
   </head>
   <body>
     <!-- header -->
+    
     <header class="header">
       <div class="container main-nav">
+        <div>
         <a class="logo" href="./index.html "
           ><span class="blue">WEB</span>STUDIO</a
-        >
-
-        <!-- навігація -->
+        ></div>
+                
         <nav>
           <ul class="header-nav list">
             <li class="header-nav-item">
-              <a class="list-link" href="./index.html">Studio </a>
+              <a class="list-link curent" href="./index.html">Studio </a>
             </li>
             <li class="header-nav-item">
-              <a class="list-link curent" href="./portfolio.html">Portfolio</a>
+              <a class="list-link " href="./portfolio.html">Portfolio</a>
             </li>
             <li class="header-nav-item">
               <a class="list-link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <!--contact-->
+     
         <ul class="contact list">
           <li>
             <a href="mailto:info@devstudio.com" class="contact-link"
@@ -52,9 +53,85 @@
               >+11 (000) 111-11-11</a
             >
           </li>
-        </ul>
+                  </ul>
+
+
+        <button type="button"  class="mobile-menu-open js-open-menu"  >
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header>
+
+<!-- спливаюче вікно меню мобільне -->
+
+<div class="mobile-menu js-menu-container" >
+  <div class="container  mobile-menu-container"  >
+  <button type="button" class="menu-close-btn js-close-menu">
+    <svg class="menu-close-btn-icon" width="8" height="8">
+      <use href="./images/icons.svg#icon-close-black"></use>
+    </svg>
+ </button>
+
+ <ul class="menu-nav list">
+  <li class="menu-nav-item">
+    <a class="menu-link " href="./index.html">Studio </a>
+  </li>
+  <li class="menu-nav-item">
+    <a class="menu-link " href="./portfolio.html">Portfolio</a>
+  </li>
+  <li class="menu-nav-item">
+    <a class="menu-link" href="">Contacts</a>
+  </li>
+</ul>
+
+
+<ul class="contact-menu list">
+  <li>
+    <a href="mailto:info@devstudio.com" class="contact-link"
+      >info@devstudio.com</a>
+  </li>
+  <li>
+    <a href="tel:+110001111111" class="contact-link"
+      >+11 (000) 111-11-11</a>
+  </li>
+          </ul>
+
+          
+          <ul class="social-list list">
+            <li class="social-list-item">
+              <a class="social-list-link" href="#">
+                <svg wіdth="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link" href="#">
+                <svg wіdth="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link" href="#">
+                <svg wіdth="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link" href="#">
+                <svg wіdth="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+</div>
+
+    </header> 
 
     <!-- main -->
     <main>
