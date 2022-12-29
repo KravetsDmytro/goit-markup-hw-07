@@ -113,6 +113,12 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+  .features-list {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -133,9 +139,10 @@ p {
 /* ==приховати від 0 до 767== */ 
 @media screen and (max-width: 767px) {
   .header-nav,
-  .contact {
+  .contact, .card-content {
     display: none;
   }
+
 
 
 .main-nav {
@@ -174,6 +181,7 @@ p {
     padding-top: 80px;
     padding-left: 40;
     padding-bottom: 40px;
+    margin-top: auto;
   }
 
   .menu-close-btn:hover,
@@ -283,11 +291,7 @@ p {
       url(../images/Dark-bg-mobile2x.jpg);
   }
 }
-.features-list {
-  display: block;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+
 
 }
 
@@ -430,7 +434,12 @@ p {
 
 
 }}}
-
+@media screen and (max-width:1199px) {
+  .work {display: none;}
+}
+@media screen and (max-width:1199px) {
+  .card-content {display: none;}
+}
 
 /* ================================ */
 
@@ -523,7 +532,7 @@ p {
 }
 
 /* work list */
-/* @media (min-width:750px) {body {background-color: #31d0aa;}} */
+
 
 .work-list {
   display: flex;
