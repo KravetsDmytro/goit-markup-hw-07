@@ -292,6 +292,20 @@ p {
   }
 }
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.features-list .item {
+  width: 396px;
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.2;
+letter-spacing: 0.02em
+}
+
 
 }
 
@@ -377,9 +391,17 @@ p {
         rgba(47, 48, 58, 0.7)
       ),
       url(../images/Dark-bg-tablet@2x.jpg);
+  }}
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
+  
+  .features-list .item {
+    width: 356px;}
 
-}}
+}
 
 @media screen and (min-width: 1200px) {
   .header .contact {
@@ -433,13 +455,40 @@ p {
     margin-bottom: 48px;
 
 
-}}}
-@media screen and (max-width:1199px) {
-  .work {display: none;}
+}}
+.card-content {
+  display: flex;
+  background-color: var(--background-color-fon);
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.card-icon {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.features-list .item {
+  width: 264px;
+}
+
+
 }
 @media screen and (max-width:1199px) {
-  .card-content {display: none;}
+  .work, .card-content {display: none;}
 }
+
 
 /* ================================ */
 
@@ -521,15 +570,7 @@ p {
 .button-hero:focus {
   background-color: #404bbf;} */
 
-.features-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
-.features-list .item {
-  width: 264px;
-}
 
 /* work list */
 
@@ -547,23 +588,7 @@ p {
 
 /* team list */
 
-.card-content {
-  display: flex;
-  background-color: var(--background-color-fon);
-  width: 264px;
-  height: 112px;
-  margin-bottom: 8px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-}
 
-.card-icon {
-  display: flex;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-}
 
 .team-list {
   display: flex;
@@ -776,12 +801,6 @@ p {
   padding: 12px;
 }
 
-.title-list {
-  color: var(--black-text-color);
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-}
 
 .text-portfolio {
   padding-top: 32px;
