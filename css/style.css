@@ -460,6 +460,26 @@ letter-spacing: 0.02em
     margin-bottom: 72px;
   }
 
+  .features-list > .item:nth-child(1) {
+    margin-bottom: 72px;
+}
+
+.features-list > .item:nth-child(odd) {
+  padding-right: 24px}
+.features-list  .title-list{font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 8px;}
+  
+.features-list .subtitle{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.2;
+letter-spacing: 0.02em
+}
+
+
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -547,6 +567,20 @@ letter-spacing: 0.02em
 .features-list .item {
   width: 264px;
 }
+.features-list  .title-list{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:var(--black-text-color);}
+
+.features-list .subtitle{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.2;
+letter-spacing: 0.02em
+}
+
 
 
 }
