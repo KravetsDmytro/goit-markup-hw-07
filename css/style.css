@@ -543,6 +543,7 @@ align-items: center;}
   }
   
   .footer-input {
+    width: 396px;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 16px;
@@ -551,7 +552,8 @@ align-items: center;}
     border-radius: 4px;
     background-color: var(--black-text-color);
     color: var(--button-color);
-    margin-right: 24px;
+    margin-bottom: 16px;
+
   }
   
   .footer-input::placeholder {
@@ -776,6 +778,99 @@ align-items: center;}
 
   .team-list .item:nth-child(4n) {
     margin-right: 0px;
+  }
+  .footer {
+    background-color: var(--black-text-color);
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  
+  .footre-text {
+    display: flex;
+    row-gap: 72px;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+
+  }
+  
+  .footer-title {
+    display: block;
+    color: var(--button-color);
+    margin-top: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  
+  .footer-subtitle {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--background-color-fon);
+  }
+  
+  .footer-list {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .footer-list-item {
+    background-color: var(--title-text-color);
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .footer-list-link {
+    display: flex;
+    gap: 12px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    fill: var(--body-color-white);
+    padding: 12px;
+  }
+  
+  .footer-list-item:hover,
+  .footer-list-item:focus {
+    background-color: var(--green-color);
+  }
+  
+  /* =========form-footer===== */
+  
+  .footer-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-input {
+    width: 264px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--black-text-color);
+    color: var(--button-color);
+    margin-right: 24px;
+  }
+  
+  .footer-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
   }
 
 }
