@@ -72,15 +72,15 @@
     </svg>
  </button>
 
- <ul class="menu-nav  list">
+ <ul class="menu-nav  ">
   <li class="menu-nav-item  ">
-    <a class="menu-link " href="./index.html">Studio </a>
+    <a class="menu-link list akcent" href="./index.html">Studio </a>
   </li>
   <li class="menu-nav-item">
-    <a class="menu-link " href="./portfolio.html">Portfolio</a>
+    <a class="menu-link  list" href="./portfolio.html">Portfolio</a>
   </li>
   <li class="menu-nav-item">
-    <a class="menu-link" href="">Contacts</a>
+    <a class="menu-link   list" href="">Contacts</a>
   </li>
 </ul>
 
@@ -219,31 +219,19 @@
           <h2 class="heading">What are we doing</h2>
           <ul class="work-list list">
             <li class="item">
-              <img
-                class="img-block"
-                src="./images/img1.jpg"
-                alt="screen"
-                width="360"
-                height="360"
-              />
+              <img class="img-block" src="./images/img1.jpg" srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" alt="app" width="360"
+                height="360" > 
             </li>
             <li class="item">
-              <img
-                class="img-block"
-                src="./images/img2.jpg"
-                alt="applications"
-                width="360"
-                height="360"
-              />
+            <img class="img-block" src="./images/img2.jpg" srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x" alt="mobile-screan" width="360"
+                height="360" > 
             </li>
             <li class="item">
-              <img
-                class="img-block"
-                src="./images/img3.jpg"
-                alt="mobile applications"
-                width="360"
-                height="360"
-              />
+
+              <img class="img-block" src="./images/img3.jpg" srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" alt="mobile applications" width="360"
+                height="360" > 
+                           
+
             </li>
           </ul>
         </div>
@@ -258,8 +246,10 @@
 
           <ul class="team-list list">
             <li class="item">
-              <img src="./images/photo1.jpg" alt="Designer" />
-              <div class="comands">
+              
+              <img src="./images/photo1.jpg" srcset="./images/photo1.jpg 1x, ./images/photo1@2x.jpg 2x" alt="product manager"  >    
+
+               <div class="comands">
                 <h3 class="title-list">Mark Guerrero</h3>
                 <p class="subtitle">Product Designer</p>
 
@@ -300,7 +290,8 @@
             </li>
 
             <li class="item">
-              <img src="./images/photo2.jpg" alt="Developer" />
+
+              <img src="./images/photo2.jpg" srcset="./images/photo2.jpg 1x, ./images/photo2@2x.jpg 2x" alt="Develope"  >    
               <div class="comands">
                 <h3 class="title-list">Tom Ford</h3>
                 <p class="subtitle">Frontend Developer</p>
@@ -338,11 +329,9 @@
             </li>
 
             <li class="item">
-              <img
-                src="./images/photo3.jpg"
-                alt="Marketing"
-                height="260"
-                width="264"            />
+              <img src="./images/photo3.jpg" srcset="./images/photo3.jpg 1x, ./images/photo3@2x.jpg 2x" alt="Marketing"  >   
+
+             
 
               <div class="comands">
                 <h3 class="title-list">Camila Garcia</h3>
@@ -380,12 +369,10 @@
               </div>
             </li>
             <li class="item">
-              <img
-                src="./images/photo4.jpg"
-                alt="UI Designer"
-                height="260"
-                width="264"
-              />
+              
+                <img src="./images/photo4.jpg" srcset="./images/photo4.jpg 1x, ./images/photo4@2x.jpg 2x" alt="UI Designer"  > 
+
+          
               <div class="comands">
                 <h3 class="title-list">Daniel Wilson</h3>
                 <p class="subtitle">UI Designer</p>
@@ -537,8 +524,9 @@
   <form  class="footer-form ">  
 
 <label  class="footer-label" for="mail">
-            <input  class="footer-input" type="email" name="mail" id="mail" placeholder="E-mail">
-</label>
+           
+</label> 
+<input  class="footer-input" type="email" name="mail" id="mail" placeholder="E-mail">
 
  <button type="submit" class="footer-button"> Subscribe <svg class="button-icon" width="24" height="20">
   <use href="./images/icons.svg#icon-subscribe"></use>
