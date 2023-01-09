@@ -232,6 +232,7 @@ img {
 
 /* ==приховати від 0 до 767== */
 
+
 @media screen and (max-width: 767px) {
   .header-nav,
   .contact,
@@ -349,8 +350,10 @@ img {
     padding-top: 80px;
     padding-left: 40px;
     padding-bottom: 40px;
-    margin-top: auto;
-  }
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between  }
 
   .menu-close-btn:hover,
   .menu-close-btn:focus {
@@ -410,8 +413,7 @@ img {
     display: flex;
     row-gap: 40px;
     flex-wrap: wrap;
-    margin-top: 284px;
-  }
+    }
 
   .mobile-menu .contact-link {
     margin-bottom: 40px;
@@ -521,7 +523,7 @@ img {
   .features-list .subtitle {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.5;
     letter-spacing: 0.02em;
   }
 
@@ -784,11 +786,12 @@ max-width: 396px;
     margin-right: 0;
   }
 
-  .header-nav .list-link {
+   .list-link {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
+    color:var(--black-text-color)
   }
 
   .header .contact {
@@ -815,7 +818,6 @@ max-width: 396px;
     background-color: var(--accent-color);
     border-radius: 2px;
     position: absolute;
-
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1010,7 +1012,7 @@ max-width: 396px;
   }
 
   .features-list > .item:nth-child(odd) {
-    padding-right: 24px;
+    margin-right: 24px;
   }
 
   .features-list .title-list {
@@ -1023,7 +1025,7 @@ max-width: 396px;
   .features-list .subtitle {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.5;
     letter-spacing: 0.02em;
   }
 
@@ -1188,7 +1190,7 @@ max-width: 396px;
 
   /* .header-nav-item:last-child{margin-right: 0;} */
 
-  .header-nav .list-link {
+ .list-link {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
@@ -1291,11 +1293,8 @@ max-width: 396px;
   }
 
   .features-list .subtitle {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-  }
+    font-weight: 400;
+    }
 
   .work-list {
     display: flex;
@@ -1699,7 +1698,7 @@ max-width: 396px;
 }
 
 .form {
-  width: 360px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 16px;
@@ -1849,3 +1848,14 @@ max-width: 396px;
 }
 
 /* =============модальне вікно ==========*/
+
+
+/* ===================================== */
+@media screen and (min-width:200px) and (max-width: 468px){
+  .contact-link-tel{font-weight: 500;
+    font-size: 8vw;
+    line-height: 1.11 }
+    .modal {
+      max-width: 90%;
+    height: auto;}
+}
